@@ -1,0 +1,34 @@
+{
+  "name": "hexo-filter-asciinema",
+  "version": "1.0.0",
+  "description": "A simple plugin which can embed asciinema-player in your article.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js",
+    "eslint": "eslint .",
+    "jscs": "jscs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mythsman/hexo-filter-asciinema.git"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-hexo": "^1.0.6",
+    "hexo": "^3.4.4",
+    "jscs": "^2.7.0",
+    "jscs-preset-hexo": "^1.0.1",
+    "mocha": "^2.5.3"
+  },
+  "keywords": [
+    "hexo",
+    "asciinema",
+    "shell"
+  ],
+  "author": "mythsman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mythsman/hexo-filter-asciinema/issues"
+  },
+  "homepage": "https://github.com/mythsman/hexo-filter-asciinema#readme"
+}
