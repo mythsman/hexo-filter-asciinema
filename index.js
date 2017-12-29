@@ -9,7 +9,7 @@ var player_tag = '<asciinema-player src="$1"></asciinema-player>';
 
 hexo.extend.filter.register('before_post_render', function(data) {
 
-  if (hexo.config.asciinema != null && hexo.config.asciinema.enabled) {
+  if (hexo.config.asciinema != null && hexo.config.asciinema.enable) {
 
     data.content = data.content.replace(/\[\@asciinema\]\((.*?)\)/g, js_tag + css_tag + player_tag);
 
