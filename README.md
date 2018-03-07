@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://nodejs.org/en/)
 [![NPM version](https://badge.fury.io/js/hexo-filter-asciinema.svg)](https://www.npmjs.com/package/hexo-filter-asciinema)
 [![npm](https://img.shields.io/npm/dt/hexo-filter-asciinema.svg)](https://www.npmjs.com/package/hexo-filter-asciinema)
+![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ## Desciption
 A simple plugin which can embed asciinema-player in your article.
