@@ -9,7 +9,7 @@
 
 ## Desciption
 
-A simple plugin which can embed asciinema-player in your article.
+A simple plugin which can embed asciinema-player in your article with local file.
 
 Though the plugin [hexo-tag-asciinema](https://github.com/narongdejsrn/hexo-tag-asciinema) does a similar thing . That one relies on `asciinema.org` ,  while this one relies just on local file.
 
