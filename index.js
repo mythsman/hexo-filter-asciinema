@@ -1,10 +1,10 @@
 /* global hexo */
 'use strict';
 
-var js_cdn = 'https://cdn.bootcss.com/asciinema-player/2.4.1/asciinema-player.js';
-var css_cdn = 'https://cdn.bootcss.com/asciinema-player/2.4.1/asciinema-player.css';
-var js_tag = '<link rel="stylesheet" type="text/css" href="' + css_cdn + '" />';
-var css_tag = '<script src="' + js_cdn + '"></script>';
+var fs = require('hexo-fs');
+
+var js_tag = '<link rel="stylesheet" type="text/css" href="/asciinema-player.css" />';
+var css_tag = '<script src="/asciinema-player.js"></script>';
 var player_tag = '<asciinema-player src="$1"></asciinema-player>';
 
 hexo.extend.filter.register('before_post_render', function(data) {
@@ -17,4 +17,22 @@ hexo.extend.filter.register('before_post_render', function(data) {
 
   return data;
 
+});
+
+hexo.extend.generator.register('asciinema-css', function(locals) {
+  return {
+    path: 'asciinema-player.css',
+    data: function() {
+      return fs.createReadStream(__dirname + '/resources/asciinema-player.css');
+    }
+  };
+});
+
+hexo.extend.generator.register('asciinema-js', function(locals) {
+  return {
+    path: 'asciinema-player.js',
+    data: function() {
+      return fs.createReadStream(__dirname + '/resources/asciinema-player.js');
+    }
+  };
 });

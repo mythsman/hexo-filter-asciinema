@@ -1,10 +1,9 @@
 {
   "name": "hexo-filter-asciinema",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple plugin which can embed asciinema-player in your article.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/index.js",
     "eslint": "eslint .",
     "jscs": "jscs ."
   },
