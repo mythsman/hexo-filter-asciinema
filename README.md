@@ -6,6 +6,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/04ff04838dac48d4823abc88165c36fb)](https://www.codacy.com/app/mythsman/hexo-filter-asciinema?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mythsman/hexo-filter-asciinema&amp;utm_campaign=Badge_Grade)
 [![GitHub license](https://img.shields.io/github/license/mythsman/hexo-filter-asciinema.svg)](https://github.com/mythsman/hexo-filter-asciinema/blob/master/LICENSE)
 
+[![NPM](https://nodei.co/npm/hexo-filter-asciinema.png)](https://nodei.co/npm/hexo-filter-asciinema/)
 
 ## Desciption
 
