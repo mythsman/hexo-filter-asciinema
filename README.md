@@ -26,5 +26,5 @@ asciinema:
 ## Usage
 When you want to add asciicast.json in your article, just put the file in the right place and write like this:
 ```markdown
-[@asciinema](asciicast.cast)
+[@asciinema](path/to/asciicast.cast)
 ```
