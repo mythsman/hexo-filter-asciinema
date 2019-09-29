@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Powerline Symbols';
+  src: local('Powerline Symbols'), local('PowerlineSymbols'), url('PowerlineSymbols.otf') format('opentype');
+}
 .asciinema-player-wrapper {
   position: relative;
   text-align: center;
