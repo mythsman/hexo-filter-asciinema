@@ -43,3 +43,13 @@ hexo.extend.generator.register('asciinema-js', function(locals) {
     }
   };
 });
+
+hexo.extend.generator.register('asciinema-font', function(locals) {
+
+  return {
+    path: 'assets/PowerlineSymbols.otf',
+    data: function() {
+      return fs.createReadStream(__dirname + '/resources/PowerlineSymbols.otf');
+    }
+  };
+});
