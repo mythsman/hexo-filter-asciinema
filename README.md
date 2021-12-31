@@ -28,3 +28,8 @@ When you want to add asciicast.json in your article, just put the file in the ri
 ```markdown
 [@asciinema](path/to/asciicast.cast)
 ```
+
+## Release
+### 1.0.6
+* upgrade asciinema.js to 3.0.0-rc.1.
+* fix `window.wrap` error.

@@ -10,13 +10,15 @@ if(root.endsWith('/')){
 
 var css_tag = '<script src="' + root + '/assets/asciinema-player.js"></script>';
 var js_tag = '<link rel="stylesheet" type="text/css" href="' + root + '/assets/asciinema-player.css" />';
-var player_tag = '<asciinema-player src="$1"></asciinema-player>';
+var player_tag = '<div id="$1"></div><script>AsciinemaPlayer.create("$1",document.getElementById("$1"));</script>';
 
 hexo.extend.filter.register('before_post_render', function(data) {
 
   if (hexo.config.asciinema != null && hexo.config.asciinema.enable) {
 
-    data.content = data.content.replace(/\[\@asciinema\]\((.*?)\)/g, js_tag + css_tag + player_tag);
+    data.content = css_tag + js_tag + data.content;
+
+    data.content = data.content.replace(/\[\@asciinema\]\((.*?)\)/g, player_tag);
 
   }
 
